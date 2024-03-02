@@ -6,12 +6,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>Help Center</header>
+    <header>
+      <div id="header-container">
+        <div class="flex-container">
+          <div id="logo">
+            <div id="logo-container">
+              <div id="logo-square">
+                <div id="logo-circle"></div>
+              </div>
+            </div>
+            <div id="logo-name">Abstract</div>
+          </div>
+          <div id="separator"></div>
+          <div id="page-title">Help Center</div>
+        </div>
+        <div class="flex-container">
+          <div id="submit-request">Submit a request</div>
+          <div id="sign-in">Sign in</div>
+        </div>
+      </div>
+    </header>
 
     <main>
       <div id="search-container">
         <h1>How can we help?</h1>
-        <form><input type="text" value="Search" /></form>
+        <form>
+          <input type="text" value="Search" />
+          <button>&#129122;</button>
+        </form>
       </div>
 
       <div id="topics-container">

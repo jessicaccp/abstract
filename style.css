@@ -32,22 +32,113 @@ body {
 header {
   background-color: var(--neutral-dark);
   font-size: 1.5rem;
-  padding: 0 1.875rem;
+  padding: 0 6.5rem;
+  min-height: 5.5rem;
+  height: 5.5rem;
+}
+
+#header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+}
+
+#logo {
+  display: flex;
+  gap: 0.5rem;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-container {
+  background-color: var(--neutral-light);
+  height: 2rem;
+  width: 2rem;
+  border-radius: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo-square {
+  border-top: 0.2rem solid var(--neutral-dark);
+  border-right: 0.2rem solid var(--neutral-dark);
+  width: 1.1rem;
+  height: 1.1rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+#logo-circle {
+  border: 0.2rem solid var(--neutral-dark);
+  border-radius: 100%;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+#separator {
+  background-color: var(--neutral-light);
+  width: 0.1rem;
+  height: 1.85rem;
+}
+
+.flex-container {
+  display: flex;
+  gap: 1rem;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 #search-container {
   background-color: var(--main-light);
   color: var(--neutral-mid);
   font-size: 1.25rem;
-  padding: 0 1.875rem;
-}
-
-#search-container input {
-  font-size: 1.25rem;
+  padding: 5rem 1.875rem 7.188rem 1.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #search-container h1 {
+  line-height: 7.5rem;
   font-size: 5rem;
+  flex-shrink: 0;
+  padding-bottom: 1rem;
+}
+
+#search-container form {
+  background-color: var(--neutral-light);
+  border: 0.05rem solid var(--neutral-dark);
+  width: 45rem;
+  height: 4.1rem;
+  flex-shrink: 0;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  display: flex;
+  padding: 1rem;
+}
+
+#search-container input {
+  background-color: var(--neutral-light);
+  font-size: 1.25rem;
+  line-height: 2rem;
+  /* padding: 1rem; */
+  flex-shrink: 0;
+  width: calc(100% - 1.5rem);
+  height: 100%;
+}
+
+#search-container button {
+  background-color: var(--neutral-light);
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  width: 1.5rem;
+  height: 100%;
 }
 
 #topics-container {
