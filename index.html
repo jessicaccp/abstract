@@ -9,7 +9,11 @@
     <header>
       <div id="header-container">
         <div class="flex-container">
-          <div id="logo">
+          <div
+            id="logo"
+            title="Go to goabstract.com"
+            onclick="window.location.href='#';"
+          >
             <div id="logo-container">
               <div id="logo-square">
                 <div id="logo-circle"></div>
@@ -18,11 +22,17 @@
             <div id="logo-name">Abstract</div>
           </div>
           <div id="separator"></div>
-          <div id="page-title">Help Center</div>
+          <div id="page-title">
+            <a href="#" title="Home">Help Center</a>
+          </div>
         </div>
         <div class="flex-container">
-          <div id="submit-request">Submit a request</div>
-          <div id="sign-in">Sign in</div>
+          <div id="submit-request">
+            <button>Submit a request</button>
+          </div>
+          <div id="sign-in">
+            <button title="Opens a dialog">Sign in</button>
+          </div>
         </div>
       </div>
     </header>
@@ -31,7 +41,7 @@
       <div id="search-container">
         <h1>How can we help?</h1>
         <form>
-          <input type="text" value="Search" />
+          <input type="text" placeholder="Search" />
           <button>&#129122;</button>
         </form>
       </div>
