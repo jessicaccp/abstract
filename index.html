@@ -10,14 +10,21 @@
       <div class="outer">
         <div class="inner flex row">
           <div class="left flex row">
-            <div id="header-logo"></div>
-            <div id="header-name"></div>
+            <div id="header-logo" title="Go to goabstract.com"></div>
+            <div id="header-name" title="Go to goabstract.com">Abstract</div>
             <div id="header-separator"></div>
-            <div id="header-page"></div>
+            <div id="header-page">
+              <a href="#" title="Home">Help Center</a>
+            </div>
           </div>
           <form class="right flex row">
-            <input id="submit-request" type="button" value="" />
-            <input id="sign-in" type="button" value="" />
+            <input id="submit-request" type="button" value="Submit a request" />
+            <input
+              id="sign-in"
+              type="button"
+              value="Sign in"
+              title="Opens a dialog"
+            />
           </form>
         </div>
       </div>
@@ -26,10 +33,12 @@
       <section id="search">
         <div class="outer">
           <div class="inner flex column">
-            <div id="search-heading"></div>
+            <div id="search-heading">
+              <h1>How can we help?</h1>
+            </div>
             <form id="search-form" class="flex column">
-              <input id="search-input" type="text" />
-              <input id="search-arrow" type="button" />
+              <input id="search-input" type="text" placeholder="Search" />
+              <input id="search-arrow" type="button" value="&#129122;" />
             </form>
           </div>
         </div>
@@ -42,9 +51,12 @@
                 <div class="topic-img"></div>
               </div>
               <div class="right flex column">
-                <h2 class="topic-title"></h2>
-                <p class="topic-description"></p>
-                <p class="topic-more"></p>
+                <h2 class="topic-title">Using Abstract</h2>
+                <p class="topic-description">
+                  Abstract lets you manage, version, and document your designs
+                  in one place.
+                </p>
+                <p class="topic-more"><a href="#">Learn More</a></p>
               </div>
             </div>
             <div class="topic flex row" id="topic-2">
@@ -52,9 +64,12 @@
                 <div class="topic-img"></div>
               </div>
               <div class="right flex column">
-                <h2 class="topic-title"></h2>
-                <p class="topic-description"></p>
-                <p class="topic-more"></p>
+                <h2 class="topic-title">Manage your account</h2>
+                <p class="topic-description">
+                  Configure your account settings, such as your email, profile
+                  details, and password.
+                </p>
+                <p class="topic-more"><a href="#">Learn More</a></p>
               </div>
             </div>
             <div class="topic flex row" id="topic-3">
@@ -62,9 +77,14 @@
                 <div class="topic-img"></div>
               </div>
               <div class="right flex column">
-                <h2 class="topic-title"></h2>
-                <p class="topic-description"></p>
-                <p class="topic-more"></p>
+                <h2 class="topic-title">
+                  Manage organizations, teams, and projects
+                </h2>
+                <p class="topic-description">
+                  Use Abstract organizations, teams, and projects to organize
+                  your people and your work.
+                </p>
+                <p class="topic-more"><a href="#">Learn More</a></p>
               </div>
             </div>
             <div class="topic flex row" id="topic-4">
@@ -72,9 +92,11 @@
                 <div class="topic-img"></div>
               </div>
               <div class="right flex column">
-                <h2 class="topic-title"></h2>
-                <p class="topic-description"></p>
-                <p class="topic-more"></p>
+                <h2 class="topic-title">Manage billing</h2>
+                <p class="topic-description">
+                  Change subscriptions and payment details.
+                </p>
+                <p class="topic-more"><a href="#">Learn More</a></p>
               </div>
             </div>
             <div class="topic flex row" id="topic-5">
@@ -82,9 +104,11 @@
                 <div class="topic-img"></div>
               </div>
               <div class="right flex column">
-                <h2 class="topic-title"></h2>
-                <p class="topic-description"></p>
-                <p class="topic-more"></p>
+                <h2 class="topic-title">Authenticate to Abstract</h2>
+                <p class="topic-description">
+                  Set up and configure SSO, SCIM, and Just-in-Time provisioning.
+                </p>
+                <p class="topic-more"><a href="#">Learn More</a></p>
               </div>
             </div>
             <div class="topic flex row" id="topic-6">
@@ -92,9 +116,9 @@
                 <div class="topic-img"></div>
               </div>
               <div class="right flex column">
-                <h2 class="topic-title"></h2>
-                <p class="topic-description"></p>
-                <p class="topic-more"></p>
+                <h2 class="topic-title">Abstract support</h2>
+                <p class="topic-description">Get in touch with a human.</p>
+                <p class="topic-more"><a href="#">Learn More</a></p>
               </div>
             </div>
           </div>
@@ -105,32 +129,48 @@
       <div class="outer">
         <div class="inner flex row">
           <div class="footer-column flex column" id="column-1">
-            <h3 class="column-title"></h3>
-            <ul class="column-list"></ul>
+            <h3 class="column-title">Abstract</h3>
+            <ul class="column-list">
+              <li><a href="#">Start Trial</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Download</a></li>
+            </ul>
           </div>
-        </div>
-        <div class="inner flex row">
           <div class="footer-column flex column" id="column-2">
-            <h3 class="column-title"></h3>
-            <ul class="column-list"></ul>
+            <h3 class="column-title">Resources</h3>
+            <ul class="column-list">
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Release Notes</a></li>
+              <li><a href="#">Status</a></li>
+            </ul>
           </div>
-        </div>
-        <div class="inner flex row">
           <div class="footer-column flex column" id="column-3">
-            <h3 class="column-title"></h3>
-            <ul class="column-list"></ul>
+            <h3 class="column-title">Community</h3>
+            <ul class="column-list">
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Dribbble</a></li>
+              <li><a href="#">Podcast</a></li>
+            </ul>
           </div>
-        </div>
-        <div class="inner flex row">
           <div class="footer-column flex column" id="column-4">
-            <h3 class="column-title"></h3>
-            <ul class="column-list"></ul>
+            <h3 class="column-title">Company</h3>
+            <ul class="column-list">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Legal</a></li>
+            </ul>
+
+            <h4 class="column-subtitle">Contact Us</h4>
+            <p><a href="#">info@abstract.com</a></p>
           </div>
-        </div>
-        <div class="inner flex row">
-          <div class="footer-column flex column" id="column-5">
-            <h3 class="column-title"></h3>
-            <ul class="column-list"></ul>
+          <div class="footer-column flex column" id="footer-copyright">
+            <div id="footer-logo"></div>
+            <p>&copy; Copyright 2023</p>
+            <p>Abstract Studio Design, Inc.</p>
+            <p>All rights reserved</p>
           </div>
         </div>
       </div>
@@ -138,8 +178,8 @@
     <div class="outer fixed" id="help">
       <div class="inner flex row">
         <div id="help-circle"></div>
-        <div id="help-question"></div>
-        <div id="help-title"></div>
+        <div id="help-question">?</div>
+        <div id="help-title">Help</div>
       </div>
     </div>
 
@@ -174,9 +214,9 @@
           </div>
         </div>
       </div>
-    </header>
-    <main>
-      <section id="search">
+    </header> -->
+    <!-- <main> -->
+    <!-- <section id="search">
         <div id="search-container">
           <h1>How can we help?</h1>
           <form>
@@ -184,8 +224,8 @@
             <button>&#129122;</button>
           </form>
         </div>
-      </section>
-      <section id="topics">
+      </section> -->
+    <!-- <section id="topics">
         <div id="topics-container">
           <div class="topic" id="topic1">
             <div class="topic-image"></div>
@@ -241,9 +281,9 @@
             Help
           </button>
         </div>
-      </section>
-    </main>
-    <footer>
+      </section> -->
+    <!-- </main> -->
+    <!-- <footer>
       <div id="footer-container">
         <div class="flex flex-center column-container">
           <h3>Abstract</h3>
