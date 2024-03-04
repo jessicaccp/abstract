@@ -6,14 +6,149 @@
     <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
-    <header>
+    <header id="header">
+      <div class="outer">
+        <div class="inner flex row">
+          <div class="left flex row">
+            <div id="header-logo"></div>
+            <div id="header-name"></div>
+            <div id="header-separator"></div>
+            <div id="header-page"></div>
+          </div>
+          <form class="right flex row">
+            <input id="submit-request" type="button" value="" />
+            <input id="sign-in" type="button" value="" />
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="search">
+        <div class="outer">
+          <div class="inner flex column">
+            <div id="search-heading"></div>
+            <form id="search-form" class="flex column">
+              <input id="search-input" type="text" />
+              <input id="search-arrow" type="button" />
+            </form>
+          </div>
+        </div>
+      </section>
+      <section id="topics">
+        <div class="outer">
+          <div class="inner">
+            <div class="topic flex row" id="topic-1">
+              <div class="left">
+                <div class="topic-img"></div>
+              </div>
+              <div class="right flex column">
+                <h2 class="topic-title"></h2>
+                <p class="topic-description"></p>
+                <p class="topic-more"></p>
+              </div>
+            </div>
+            <div class="topic flex row" id="topic-2">
+              <div class="left">
+                <div class="topic-img"></div>
+              </div>
+              <div class="right flex column">
+                <h2 class="topic-title"></h2>
+                <p class="topic-description"></p>
+                <p class="topic-more"></p>
+              </div>
+            </div>
+            <div class="topic flex row" id="topic-3">
+              <div class="left">
+                <div class="topic-img"></div>
+              </div>
+              <div class="right flex column">
+                <h2 class="topic-title"></h2>
+                <p class="topic-description"></p>
+                <p class="topic-more"></p>
+              </div>
+            </div>
+            <div class="topic flex row" id="topic-4">
+              <div class="left">
+                <div class="topic-img"></div>
+              </div>
+              <div class="right flex column">
+                <h2 class="topic-title"></h2>
+                <p class="topic-description"></p>
+                <p class="topic-more"></p>
+              </div>
+            </div>
+            <div class="topic flex row" id="topic-5">
+              <div class="left">
+                <div class="topic-img"></div>
+              </div>
+              <div class="right flex column">
+                <h2 class="topic-title"></h2>
+                <p class="topic-description"></p>
+                <p class="topic-more"></p>
+              </div>
+            </div>
+            <div class="topic flex row" id="topic-6">
+              <div class="left">
+                <div class="topic-img"></div>
+              </div>
+              <div class="right flex column">
+                <h2 class="topic-title"></h2>
+                <p class="topic-description"></p>
+                <p class="topic-more"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="outer">
+        <div class="inner flex row">
+          <div class="footer-column flex column" id="column-1">
+            <h3 class="column-title"></h3>
+            <ul class="column-list"></ul>
+          </div>
+        </div>
+        <div class="inner flex row">
+          <div class="footer-column flex column" id="column-2">
+            <h3 class="column-title"></h3>
+            <ul class="column-list"></ul>
+          </div>
+        </div>
+        <div class="inner flex row">
+          <div class="footer-column flex column" id="column-3">
+            <h3 class="column-title"></h3>
+            <ul class="column-list"></ul>
+          </div>
+        </div>
+        <div class="inner flex row">
+          <div class="footer-column flex column" id="column-4">
+            <h3 class="column-title"></h3>
+            <ul class="column-list"></ul>
+          </div>
+        </div>
+        <div class="inner flex row">
+          <div class="footer-column flex column" id="column-5">
+            <h3 class="column-title"></h3>
+            <ul class="column-list"></ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="outer fixed" id="help">
+      <div class="inner flex row">
+        <div id="help-circle"></div>
+        <div id="help-question"></div>
+        <div id="help-title"></div>
+      </div>
+    </div>
+
+    <!-- ---------------- -->
+
+    <!-- <header>
       <div id="header-container">
         <div class="flex flex-center">
-          <div
-            id="logo"
-            title="Go to goabstract.com"
-            onclick="window.location.href='#';"
-          >
+          <div id="logo" title="Go to goabstract.com">
             <div id="logo-container">
               <div id="logo-square">
                 <div id="logo-circle"></div>
@@ -40,7 +175,6 @@
         </div>
       </div>
     </header>
-
     <main>
       <section id="search">
         <div id="search-container">
@@ -51,7 +185,6 @@
           </form>
         </div>
       </section>
-
       <section id="topics">
         <div id="topics-container">
           <div class="topic" id="topic1">
@@ -63,7 +196,6 @@
             </p>
             <a href="#">Learn More</a>
           </div>
-
           <div class="topic" id="topic2">
             <div class="topic-image"></div>
             <h2>Manage your account</h2>
@@ -73,7 +205,6 @@
             </p>
             <a href="#">Learn More</a>
           </div>
-
           <div class="topic" id="topic3">
             <div class="topic-image"></div>
             <h2>Manage organizations, teams, and projects</h2>
@@ -83,14 +214,12 @@
             </p>
             <a href="#">Learn More</a>
           </div>
-
           <div class="topic" id="topic4">
             <div class="topic-image"></div>
             <h2>Manage billing</h2>
             <p>Change subscriptions and payment details.</p>
             <a href="#">Learn More</a>
           </div>
-
           <div class="topic" id="topic5">
             <div class="topic-image"></div>
             <h2>Authenticate to Abstract</h2>
@@ -99,7 +228,6 @@
             </p>
             <a href="#">Learn More</a>
           </div>
-
           <div class="topic" id="topic6">
             <div class="topic-image"></div>
             <h2>Abstract support</h2>
@@ -107,7 +235,6 @@
             <a href="#">Learn More</a>
           </div>
         </div>
-
         <div id="help-button">
           <button>
             <span id="question-mark">?</span>
@@ -116,7 +243,6 @@
         </div>
       </section>
     </main>
-
     <footer>
       <div id="footer-container">
         <div class="flex flex-center column-container">
@@ -154,7 +280,7 @@
             <li><a href="#">Legal</a></li>
           </ul>
           <h4>Contact Us</h4>
-          <p>info@abstract.com</p>
+          <p><a href="#">info@abstract.com</a></p>
         </div>
         <div class="flex flex-center column-container">
           <div id="copyright">
@@ -165,7 +291,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <script src="assets/script.js"></script>
   </body>
 </html>
