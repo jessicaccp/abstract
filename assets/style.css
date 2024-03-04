@@ -23,7 +23,6 @@
 }
 
 :root {
-  /* color palette */
   --main-dark: #4c5fd5;
   --main-light: #dadbf1;
   --neutral-dark: #000000;
@@ -36,6 +35,16 @@
   border: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
 }
 
 body {
@@ -51,6 +60,7 @@ body {
   text-rendering: optimizeLegibility;
 
   width: 100vw;
+  min-width: 75rem;
   height: 100vh;
 }
 
@@ -59,10 +69,6 @@ input {
   font-family: "GT America Standard Regular", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
-}
-
-*:hover {
-  /* transition: all 0.3s ease; */
 }
 
 header {
@@ -81,13 +87,6 @@ header {
   height: 100%;
   max-width: 118.75rem;
   margin: 0 auto;
-}
-
-.flex-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
 }
 
 #logo {
@@ -304,10 +303,35 @@ header {
 
 .topic-image {
   float: left;
-  background-color: var(--main-dark);
   min-height: 5.538rem;
   width: 5.538rem;
-  /* margin-right: 1.875rem; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#topic1 div {
+  background-image: url("./images/1.png");
+}
+
+#topic2 div {
+  background-image: url("./images/2.png");
+}
+
+#topic3 div {
+  background-image: url("./images/3.png");
+}
+
+#topic4 div {
+  background-image: url("./images/4.png");
+}
+
+#topic5 div {
+  background-image: url("./images/5.png");
+}
+
+#topic6 div {
+  background-image: url("./images/6.png");
 }
 
 .topic h2 {
@@ -364,7 +388,6 @@ header {
   border-radius: 1rem;
   margin-right: 0.25rem;
   font-size: 0.875rem;
-  /* line-height: 1.25rem; */
 }
 
 footer {
@@ -377,7 +400,7 @@ footer {
 }
 
 #footer-container {
-  max-width: 118.75rem;
+  max-width: 128rem;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -386,11 +409,10 @@ footer {
   margin: 0 auto;
 }
 
-footer .flex-container {
+.column-container {
   flex-direction: column;
   align-items: flex-start;
   width: 20%;
-  /* padding-left: 20px; */
 }
 
 footer h3 {
@@ -417,11 +439,17 @@ footer h4 {
   margin-top: 1.875rem;
 }
 
-footer .flex-container:last-of-type {
+.column-container:last-of-type {
   margin-top: auto;
   margin-left: auto;
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+#copyright {
+  margin-top: auto;
+  margin-left: auto;
+  width: fit-content;
 }
 
 #logo-end {
@@ -429,4 +457,5 @@ footer .flex-container:last-of-type {
   width: 2.194rem;
   background-color: var(--neutral-light);
   margin-bottom: 1.25rem;
+  border-radius: 40%;
 }
