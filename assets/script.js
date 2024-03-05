@@ -1,16 +1,27 @@
-// header logo
-const headerLogo = document.getElementById('logo');
-const headerLogoContainer = document.getElementById('logo-container');
-const headerLogoName = document.getElementById('logo-name');
+// header
+// reduce opacity of logo and name when hover
+
+const headerLogo = document.getElementById('header-logo');
+const headerName = document.getElementById('header-name');
 
 headerLogo.addEventListener("mouseover", (event) => {
-    headerLogoContainer.style.backgroundColor = 'var(--main-light)';
-    headerLogoName.style.color = 'var(--main-light)';
+    headerLogo.style.opacity = '0.8';
+    headerName.style.opacity = '0.8';
 });
 
 headerLogo.addEventListener("mouseleave", (event) => {
-    headerLogoContainer.style.backgroundColor = 'var(--neutral-light)';
-    headerLogoName.style.color = 'var(--neutral-light)';
+    headerLogo.style.opacity = '1';
+    headerName.style.opacity = '1';
+});
+
+headerName.addEventListener("mouseover", (event) => {
+    headerLogo.style.opacity = '0.8';
+    headerName.style.opacity = '0.8';
+});
+
+headerName.addEventListener("mouseleave", (event) => {
+    headerLogo.style.opacity = '1';
+    headerName.style.opacity = '1';
 });
 
 // search form
