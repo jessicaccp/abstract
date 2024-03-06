@@ -26,6 +26,7 @@
   --main-dark: #4c5fd5;
   --main-light: #dadbf1;
   --neutral-dark: #000000;
+  --neutral-dark-10-percent: #0000001a;
   --neutral-mid: #191a1b;
   --neutral-light: #ffffff;
 }
@@ -53,9 +54,9 @@
 
 /* .left {
   margin-right: auto;
-}
+} */
 
-.right {
+/* .right {
   margin-left: auto;
 } */
 
@@ -94,6 +95,11 @@ button {
   -webkit-user-select: none;
   touch-action: manipulation;
   -ms-touch-action: manipulation;
+}
+
+input:focus,
+button:focus {
+  outline: none;
 }
 
 a {
@@ -152,7 +158,6 @@ a:hover {
   justify-content: space-between;
   max-width: 118.75rem;
   width: 90%;
-  margin: auto;
 }
 
 @media (min-width: 48rem) {
@@ -224,7 +229,6 @@ a:hover {
 #sign-in {
   display: inline-block;
   background-color: var(--main-dark);
-  margin-left: 1rem;
   padding: 0.375rem 2rem;
   border: 0.063rem solid transparent;
   border-radius: 8px;
@@ -245,13 +249,13 @@ a:hover {
   }
 }
 
-#header-search {
-  display: none;
-}
-
 #header-search:hover,
 #header-menu:hover {
   opacity: 0.8;
+}
+
+#header-search {
+  display: none;
 }
 
 @media (max-width: 74.999rem) {
@@ -272,6 +276,60 @@ a:hover {
 
 #search .outer {
   background-color: var(--main-light);
+  padding-top: 5rem;
+  padding-bottom: 7.188rem;
+}
+
+@media (min-width: 48rem) {
+  #search .outer {
+    padding-right: 1.875rem;
+    padding-left: 1.875rem;
+  }
+}
+
+#search .inner {
+  max-width: 45rem;
+  width: 90%;
+}
+
+#search-heading {
+  font-size: 5rem;
+  letter-spacing: -0.25rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+#search-form {
+  justify-content: space-between;
+  max-width: 45rem;
+  box-shadow: 0 0.563rem 0.875rem 0 var(--neutral-dark-10-percent);
+  -webkit-box-shadow: 0 0.563rem 0.875rem 0 var(--neutral-dark-10-percent);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s,
+    -webkit-box-shadow ease-in-out 0.15s;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  padding: 1rem;
+  width: 100%;
+  background-color: var(--neutral-light);
+  border: 0.063rem solid var(--neutral-dark);
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+}
+
+#search-input {
+  width: calc(100% - 2rem);
+}
+
+#search-input::placeholder {
+  color: var(--neutral-dark);
+  opacity: 1;
+}
+
+#search-arrow i {
+  line-height: 1.875rem;
 }
 
 #topics .outer {
