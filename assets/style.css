@@ -70,6 +70,18 @@
   width: 100%;
 }
 
+.outer {
+  padding-right: 0.938rem;
+  padding-left: 0.938rem;
+}
+
+@media (min-width: 48rem) {
+  .outer {
+    padding-right: 1.875rem;
+    padding-left: 1.875rem;
+  }
+}
+
 body,
 input,
 button {
@@ -153,18 +165,9 @@ a:hover {
 }
 
 #header .inner {
-  padding-right: 0.938rem;
-  padding-left: 0.938rem;
   justify-content: space-between;
   max-width: 118.75rem;
   width: 90%;
-}
-
-@media (min-width: 48rem) {
-  #header .inner {
-    padding-right: 1.875rem;
-    padding-left: 1.875rem;
-  }
 }
 
 #header-logo {
@@ -280,13 +283,6 @@ a:hover {
   padding-bottom: 7.188rem;
 }
 
-@media (min-width: 48rem) {
-  #search .outer {
-    padding-right: 1.875rem;
-    padding-left: 1.875rem;
-  }
-}
-
 #search .inner {
   max-width: 45rem;
   width: 90%;
@@ -334,6 +330,125 @@ a:hover {
 
 #topics .outer {
   background-color: var(--neutral-light);
+}
+
+#topics .inner {
+  max-width: 100rem;
+  width: 80%;
+  margin: 4rem 0 8rem 0;
+  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  align-items: flex-start;
+  row-gap: 3.125rem;
+  column-gap: 2.438rem;
+}
+
+@media (min-width: 48rem) {
+  #topics .inner {
+    margin-top: 8rem;
+  }
+}
+
+.topic {
+  width: calc(100% - 2.438rem);
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: fit-content;
+  padding-top: 3.125rem;
+}
+
+@media (min-width: 34.375rem) {
+  .topic {
+    width: calc(50% - 1.219rem);
+    min-height: 7.188rem;
+  }
+}
+
+.topic .left,
+.topic .right {
+  height: 100%;
+  min-height: 100%;
+}
+
+.topic .left {
+  flex-shrink: 1;
+  justify-content: flex-start;
+}
+
+.topic .right {
+  flex-shrink: 1;
+  overflow: hidden;
+  align-items: flex-start;
+}
+
+.topic-img {
+  padding-right: 1.875rem;
+  height: 7.5rem;
+  max-height: 7.5rem;
+  width: 7.5rem;
+  max-width: 100%;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: content-box;
+  -moz-background-origin: content-box;
+  -webkit-background-origin: content-box;
+}
+
+#topic-1 .topic-img {
+  background-image: url("images/1.png");
+}
+
+#topic-2 .topic-img {
+  background-image: url("images/2.png");
+}
+
+#topic-3 .topic-img {
+  background-image: url("images/3.png");
+}
+
+#topic-4 .topic-img {
+  background-image: url("images/4.png");
+}
+
+#topic-5 .topic-img {
+  background-image: url("images/5.png");
+}
+
+#topic-6 .topic-img {
+  background-image: url("images/6.png");
+}
+
+.topic-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.topic-description {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.topic-more {
+  line-height: 1.75rem;
+  color: var(--main-dark);
+  font-weight: 400;
+}
+
+.topic-more a {
+  color: var(--main-dark);
+}
+
+.topic-more a:hover {
+  text-decoration: none;
+  border-bottom: 0.063rem solid var(--main-dark);
+}
+
+.topic-more i {
+  font-size: 0.875rem;
 }
 
 #footer .outer {
