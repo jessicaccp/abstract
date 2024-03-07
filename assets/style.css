@@ -170,11 +170,22 @@ a:hover {
   width: 90%;
 }
 
+@media screen and (max-width: 47.999rem) {
+  #header .inner {
+    width: 100%;
+  }
+}
+
 #header-logo {
   background-color: var(--neutral-light);
   height: 2rem;
   width: 2rem;
   margin-right: 0.5rem;
+  line-height: 2rem;
+}
+
+#header-name {
+  line-height: 2rem;
 }
 
 #header-logo,
@@ -198,7 +209,14 @@ a:hover {
   -o-transition: all 0.3s;
 }
 
+@media (max-width: 479px) {
+  #header-separator {
+    margin: 0 0.438rem;
+  }
+}
+
 #header-page {
+  line-height: 2rem;
   letter-spacing: -0.031rem;
   transition: all 0.3s;
   -webkit-transition: all 0.3s;
@@ -209,6 +227,7 @@ a:hover {
 
 #header .right {
   gap: 1rem;
+  line-height: 2rem;
 }
 
 #submit-request {
@@ -288,11 +307,33 @@ a:hover {
   width: 90%;
 }
 
+@media screen and (max-width: 47.999rem) {
+  #search .inner {
+    width: 100%;
+  }
+}
+
 #search-heading {
   font-size: 5rem;
   letter-spacing: -0.25rem;
   font-weight: 400;
   margin-bottom: 1rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 47.999rem) {
+  #search-heading {
+    font-size: 4rem;
+    line-height: 3.75rem;
+    margin-bottom: 3.125rem;
+  }
+}
+
+@media screen and (max-width: 31.249rem) {
+  #search-heading {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
 }
 
 #search-form {
